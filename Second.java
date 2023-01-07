@@ -1,12 +1,9 @@
-import java.util.Scanner;
+
 public class Second {
     public static void main(String[] args) {
-        Main human =new Main();
-        Scanner sc=new Scanner(System.in);
-        human.fName=sc.next();
-        human.fName=sc.next();
-        human.year=sc.nextInt();
-        human.fullName();
-        System.out.print(human.age());
+        Main human =new Main("Nguyen", "Quan", 2002);
+        System.out.println("Name: "+ human.fName + " " + human.lName);
+        System.out.println("Age: "+ human.age());
+        System.out.println("That's all");
     }
 }
